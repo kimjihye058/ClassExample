@@ -42,10 +42,11 @@ namespace ClassExample
 
          class Child : Parent
         {
-            public string varibale = "hiding";      // 자식에도 똑같은 것이 있으니 상속 x
+            public new string varibale = "hiding";      // 자식에도 똑같은 것이 있으니 상속 x
 
-            public void Method()
+            public new void Method()    // new의 위치 주의!
             {
+
                 Console.WriteLine("자식의 메서드");
             }
             public void CountChild()
